@@ -462,6 +462,7 @@ template {
 
 .logo__img {
   width: 100%;
+  height: 100%;
 }
 
 .search {
@@ -601,8 +602,9 @@ template {
   }
   .navbar__logo {
     width: 99px;
+    height: 14px;
   }
   .navbar-top {
-    padding: 28px 0;
+    padding: 27px 0;
   }
 }
