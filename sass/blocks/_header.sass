@@ -5,9 +5,18 @@
         align-items: center
         justify-content: space-between 
         padding: 40px 0 
+    &__logo 
+        width: 177px
     &__search 
         margin-right: auto
-        margin-left: 108px
+        margin-left: 108px 
+    &-menu 
+        &__list
+            list-style-type: none
+
+.logo
+    &__img 
+        width: 100%
 
 .search 
     display: flex
@@ -23,7 +32,6 @@
         background-color: #F5FAFE
         border: none
         font-size: 12px
-        line-height: 15
         color: $text-color
     &__button 
         position: absolute
@@ -32,12 +40,11 @@
         width: 65px
         height: 100%
         border: none
-        background-color: $primary
+        background-color: $primary-color
 
 .user 
     display: flex
     align-items: center
-    text-decoration: none
     &__avatar
         width: 40px
         height: 40px
@@ -45,5 +52,5 @@
         object-fit: cover
     &__name
         margin-left: 18px
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 14px
+        line-height: 18px
