@@ -435,8 +435,25 @@ template {
   margin-left: 108px;
 }
 
+.navbar-bottom {
+  background-color: #0A223D;
+  padding: 31px 0;
+}
+
 .navbar-menu__list {
-  list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .logo__img {
