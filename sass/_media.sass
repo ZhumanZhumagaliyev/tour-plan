@@ -11,15 +11,48 @@
         &__logo
             width: 132px
         &__search 
-            margin-left: auto
+            margin-left: 47px
         &-bottom
             padding: 22px 0
         &-menu 
             &__list
+                justify-content: space-around
                 font-size: 12px;
                 line-height: 15px;
     .search
         &__input 
             max-width: 340px
 
-    
+@media (max-width: 768px)
+    .container 
+        max-width: 576px
+        width: 92%
+    .navbar
+        &__search, &__user, &-bottom
+            display: none
+        &__logo
+            width: 132px
+        
+
+    .menu-button 
+        width: 16px
+        height: 11px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        border: none
+        background-color: $light
+        &__line
+            width: 16px
+            height: 1px
+            background-color: $text-color
+
+@media (max-width: 480px)
+    .container 
+        max-width: 480px
+        width: 88%
+    .navbar
+        &__logo
+            width: 99px
+        &-top
+            padding: 28px 0
