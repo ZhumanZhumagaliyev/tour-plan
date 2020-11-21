@@ -17,13 +17,13 @@
         &-menu 
             &__list
                 justify-content: space-around
-                font-size: 12px;
-                line-height: 15px;
+                font-size: 12px
+                line-height: 15px
     .search
         &__input 
             max-width: 340px
 
-@media (max-width: 768px)
+@media (max-width: 767px)
     .container 
         max-width: 576px
         width: 92%
@@ -33,7 +33,6 @@
         &__logo
             width: 132px
         
-
     .menu-button 
         width: 16px
         height: 11px
@@ -47,6 +46,14 @@
             height: 1px
             background-color: $text-color
 
+
+@media (max-width: 600px)
+    .container
+        max-width: 600px
+    .rating
+        display: none
+
+        
 @media (max-width: 480px)
     .container 
         max-width: 480px
@@ -56,4 +63,26 @@
             width: 99px
             height: 14px
         &-top
-            padding: 27px 0
+            min-height: 70px
+            // padding: 28px 0
+            padding-top: 24px
+    .breadcrumb 
+        min-height: 50px
+
+    .hotel 
+        padding-top: 0
+        padding-bottom: 40px
+        &-info
+            &__text
+                // width: 100%
+                position: relative
+            &__wrapper
+                flex-direction: column-reverse
+                align-items: flex-start
+            &__offer
+                margin-left: 0
+                margin-bottom: 10px
+            &__stars
+                position: absolute
+                right: 17px
+                top: 11px    
