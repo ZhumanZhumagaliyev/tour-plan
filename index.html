@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -146,11 +147,42 @@
 
             </div>
             <!-- hotel-info -->
+
+            <div class="hotel-grid">
+                <!-- Slider main container -->
+                <div class="swiper-container hotel-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper hotel-slider__wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide hotel-slider__slide">
+                            <img src="img/hotel-slider-1.jpg" alt="Картинка: Фото отеля">
+                        </div>
+                        <div class="swiper-slide hotel-slider__slide">
+                            <img src="img/hotel-slider-1.jpg" alt="Картинка: Фото отеля">
+                        </div>
+                        <div class="swiper-slide hotel-slider__slide">
+                            <img src="img/hotel-slider-1.jpg" alt="Картинка: Фото отеля">
+                        </div>
+                    </div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="hotel-slider__button hotel-slider__button--prev swiper-button--prev">
+                        <img src="img/hotel-slider-arrow-prev.svg" alt="">
+                    </div>
+                    <div class="hotel-slider__button hotel-slider__button--next swiper-button--next">
+                        <img src="img/hotel-slider-arrow-next.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <!-- hotel-grid -->
         </div>
         <!-- /.container -->
     </section>
     <!-- hotel -->
 
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
