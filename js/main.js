@@ -4,12 +4,14 @@ var mySwiper = new Swiper('.hotel-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button--next',
-    prevEl: '.swiper-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
   },
 
-    keyboard: {
+  keyboard: {
     enabled: true,
     onlyInViewport: false,
   },
+
+  effect: "coverflow",
 })
