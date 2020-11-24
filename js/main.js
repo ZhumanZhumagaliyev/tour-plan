@@ -14,4 +14,19 @@ var mySwiper = new Swiper('.hotel-slider', {
   },
 
   effect: "coverflow",
-})
+});
+
+
+
+
+ymaps.ready(init);
+
+function init() {
+  // Создание карты.
+  var myMap = new ymaps.Map("map", {
+    center: [7.89067148, 98.29468129],
+    zoom: 17
+  });
+
+}
+
