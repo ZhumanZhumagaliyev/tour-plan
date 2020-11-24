@@ -80,6 +80,10 @@
     &__wrapper
     &__slide
         width: 100%
+        &-img
+            object-fit: cover
+            width: 100%
+            height: 100%
     &__button
         z-index: 10
         position: absolute
@@ -106,22 +110,22 @@
     &__info
         display: flex
         justify-content: space-between
-        margin-bottom: 5px
+        margin-bottom: 11px
     &__price
         font-weight: 800
         font-size: 24px
-        line-height: 33px
+        line-height: 31px
         &::before, &::after
             display: block
             font-weight: normal
         &::before
             content: "price starts as"
             font-size: 10px
-            line-height: 14px
+            line-height: 16px
         &::after
             content: "per room / night"
             font-size: 12px
-            line-height: 16px
+            line-height: 11px
     &__room 
         margin-top: 4px
         &-details
@@ -141,6 +145,11 @@
         line-height: 25px
         margin-bottom: 17px
         &-text
+        &-link
+            display: flex
+            align-items: center
+        &-number
+            margin-left: 8px
     &__button
         background-color: $primary-color
         width: 100%
