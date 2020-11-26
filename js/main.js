@@ -35,3 +35,5 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
   autoHeight: true,
 }); 
+
+$('.newsletter--parallax').parallax({imageSrc: 'img/newsletter-bg.jfif'});

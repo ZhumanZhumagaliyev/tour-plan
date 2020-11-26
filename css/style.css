@@ -873,11 +873,6 @@ input::placeholder {
   position: relative;
   padding-top: 98px;
   padding-bottom: 87px;
-  background-image: url(../img/newsletter-bg.jfif);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-position: center;
 }
 
 .newsletter::before {
@@ -934,6 +929,14 @@ input::placeholder {
   font-size: 36px;
   line-height: 45px;
   text-transform: uppercase;
+}
+
+.newsletter--standard {
+  background-image: url(../img/newsletter-bg.jfif);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
 }
 
 .subscribe {
