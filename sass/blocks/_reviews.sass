@@ -1,0 +1,70 @@
+.reviews
+    padding: 40px 0 70px 0
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 68px
+    &-slider
+        min-height: 324px
+        &__wrapper
+        &__slide
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            &-top
+                height: 45px
+            &-inner
+                max-width: 731px
+                min-height: 280px
+                padding: 0 95px 30px 99px
+                border-radius: 8px
+                background: url(../img/quote-start.svg) top 12.8px left 64px no-repeat,url(../img/quote-end.svg) top 113.7px right 60px no-repeat 
+                background-size: auto, auto 
+                background-color: $light
+        &__profile
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin-bottom: 31px
+            &-avatar
+                width: 90px
+                height: 90px
+                border-radius: 50%
+                margin-top: -45px
+                margin-bottom: 11px
+                object-fit: cover
+            &-name
+                font-weight: bold
+                font-size: 12px
+                line-height: 15px
+                color: $primary-color
+                margin-bottom: 10px
+            &-date
+                font-size: 10px
+                line-height: 13px
+                color: black
+                margin-bottom: 4px
+            &-stars
+        &__text
+            font-size: 12px
+            line-height: 19px
+            text-align: justify
+        &__button
+            position: absolute
+            display: flex
+            justify-content: center
+            align-items: center
+            top: 41%
+            height: 30px
+            width: 30px
+            z-index: 100
+            &--prev
+                left: 18px
+            &--next
+                right: 18px
+
+    
