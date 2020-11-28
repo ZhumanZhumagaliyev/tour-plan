@@ -1028,7 +1028,7 @@ input::placeholder {
 }
 
 .packages__big-info {
-  height: 329px;
+  height: 340px;
 }
 
 .packages__big-stars {
@@ -1044,7 +1044,7 @@ input::placeholder {
 }
 
 .packages__big-price {
-  margin-top: 37px;
+  margin-top: 26px;
 }
 
 .packages__little {
@@ -1445,6 +1445,9 @@ input::placeholder {
   }
   .activities__card {
     width: 23.5%;
+  }
+  .packages__big-frame {
+    width: 48%;
   }
 }
 
