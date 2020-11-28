@@ -1,0 +1,129 @@
+.packages
+    padding-top: 39px
+    padding-bottom: 70px
+    &__main-title
+        font-weight: bold
+        font-size: 36px
+        line-height: 45px
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 65px
+    &__wrapper
+        display: grid
+        grid-template-columns: repeat(3, 31.5%)
+        grid-template-rows: 500px
+        column-gap: 30px
+        row-gap: 30px
+        min-height: 1030px
+    &__card
+        background-color: $dark
+        color: $light
+        border-radius: 8px
+        overflow: hidden
+        display: flex
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+    &__offer
+        position: absolute
+        top: 26px
+        left: 0
+        background-color: $primary-color
+        border-radius: 0px 4px 4px 0px
+    &-title
+        font-weight: bold
+        font-size: 18px  
+        line-height: 23px
+    &-paragraph
+        font-size: 14px
+        line-height: 160.6%
+    &-details
+    &__detail
+        display: flex
+        align-items: center
+        margin-bottom: 11px
+    &__icon
+        margin-right: 14px
+    &-text
+        font-size: 12px
+        line-height: 15px
+    &__price
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        &-old
+            flex-basis: 100%
+            font-size: 14px
+            line-height: 18px
+            text-decoration: line-through
+        &-actual
+            font-weight: bold
+            font-size: 24px
+            line-height: 30px
+    &__button
+        width: 120px
+        height: 40px
+        border-radius: 4px
+        background-color: $primary-color
+        color: $light
+        font-weight: 600
+        font-size: 14px
+        line-height: 19px
+
+    &__big
+        grid-column: span 2
+        &-frame
+            width: 366px
+            height: 500px 
+            flex-shrink: 0
+            position: relative
+        &-offer
+            padding: 8px 12px 7px 11px
+            font-weight: 600
+            font-size: 12px
+            line-height: 15px
+        &-description
+            width: 100%
+            padding: 46px 21px 30px 43px
+        &-info
+            height: 329px
+        &-stars
+            margin-bottom: 5px
+        &-title
+            margin-bottom: 27px
+        &-paragraph
+            margin-bottom: 45px
+        &-details
+        &-price
+            margin-top: 37px
+
+    &__little
+        flex-direction: column
+        &-frame
+            height: 250px 
+            flex-shrink: 0
+            position: relative
+        &-offer
+            font-weight: 600
+            font-size: 8px
+            line-height: 10px
+            padding: 4px 9px
+        &-description
+            padding: 30px 21px 14px 32px
+        &-info
+            height: 124px
+        &-stars
+            margin-bottom: 5px
+        &-title
+            margin-bottom: 23px
+        &-details
+        &-price
+            margin-top: 13px
+
+.simplebar-scrollbar::before 
+    background-color: lighten($dark, 15%)
+
+
+

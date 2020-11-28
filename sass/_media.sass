@@ -79,6 +79,19 @@
             // padding: 24px 107px 24px 26px
             margin-bottom: 20px
 
+    .packages
+        &__main-title
+            font-size: 30px
+            line-height: 38px
+            margin-bottom: 40px
+        &__wrapper
+            display: grid
+            grid-template-columns: 47.95%
+            // grid-template-rows: 500px
+            // column-gap: 30px
+            // row-gap: 30px
+            // min-height: 1030px
+
 
 
 @media (max-width: 767px)
@@ -130,6 +143,21 @@
                     right: 50%
                     margin-right: -92px
                     transform: translate(50%, 0)
+    .packages
+        &__wrapper
+            column-gap: 20px
+            row-gap: 20px
+        &__big
+            &-frame
+                width: 48%                
+        // &__price
+        //     &-old
+        //         font-size: 12px
+        //     &-actual
+        //         font-size: 20px
+        &__button
+            width: 110px
+            height: 35px
 
 @media (max-width: 600px)
     .container, .newsletter__wrapper
@@ -163,7 +191,7 @@
 
     .newsletter
         padding-top: 76px
-        padding-bottom: 83px
+        padding-bottom: 88px
         &__subtitle
             font-size: 20px
             line-height: 25px
@@ -188,6 +216,25 @@
                 margin-bottom: 28px
             &:nth-of-type(4)
                 order: 4
+
+    .packages
+        &__main-title
+            font-size: 25px
+            line-height: 33px
+        &__wrapper
+            grid-template-columns: 100%
+            grid-template-rows: minmax(500px, 700px)
+        &__big
+            grid-column: span 1
+            flex-direction: column
+            &-frame
+                height: 250px
+                width: 100%
+            &-paragraph
+                margin-bottom: 25px
+            &-price
+                margin-top: 0
+
 
                  
                 
@@ -257,8 +304,12 @@
             line-height: 23px
             margin-bottom: 36px
 
+    .packages
+        padding-top: 0
+        &__main-title
+            font-size: 18px
+            line-height: 23px
 
-    
 @media (max-width: 400px)
     .hotel 
         &-slider
