@@ -11,7 +11,21 @@
         &__big
             &-frame
                 width: 48%
-            
+
+    .footer
+        &__wrapper
+            column-gap: 38px
+        &__logo
+        &__categories
+            min-width: max-content
+        &__contact
+            min-width: min-content
+        &__message
+            max-width: 539px
+            min-width: 400px
+            justify-self: self-start
+
+  
 @media (max-width: 992px)
     .container, .newsletter__wrapper
         max-width: 700px
@@ -75,6 +89,7 @@
 
     .activities
         padding-top: 50px
+        padding-bottom: 50px
         &__wrapper
             flex-wrap: wrap
         &__card
@@ -95,7 +110,41 @@
             // column-gap: 30px
             // row-gap: 30px
             // min-height: 1030px
-
+    .footer
+        padding-top: 71px
+        &__wrapper
+            // column-gap: 38px
+            grid-template-areas: "logo social social" ". . ." "categories additional legal" ". . ." "contact contact contact" ". . ." ". . ." "message message message"  ". . ." ". . ." "bottom bottom bottom"
+        &__logo
+            width: 97px
+        &__social
+            align-self: center
+            margin-left: -12px
+            margin-top: 28px
+        &__categories, &__additional, &__legal
+            margin-top: 9px
+        &__categories
+            min-width: 145px
+        &__additional
+            min-width: 246px
+        &__legal
+            min-width: 201px
+        &__contact
+            min-width: max-content
+            margin-top: 22px
+            &-adress
+                margin-bottom: 18px
+            &-frame
+                margin-right: 14px
+                align-items: center
+                height: 26px
+                width: 31px
+        &__message
+            &-form
+                margin-top: 33px 
+        &__bottom
+            &-wrapper
+                justify-content: space-between       
 
 
 @media (max-width: 767px)
@@ -154,14 +203,21 @@
         &__big
             &-frame
                 width: 48%                
-        // &__price
-        //     &-old
-        //         font-size: 12px
-        //     &-actual
-        //         font-size: 20px
         &__button
             width: 110px
             height: 35px
+
+    .footer
+        &__wrapper
+            // column-gap: 38px
+            grid-template-areas: "logo social" ". ." "categories additional" ". ." "legal legal" "contact contact" ". ." ". ." "message message"  ". ." ". ." "bottom bottom"
+        &__social
+            margin-left: 0
+        &__legal
+            justify-self: start
+        &__bottom
+            min-width: 100%
+
 
 @media (max-width: 600px)
     .container, .newsletter__wrapper
@@ -208,6 +264,7 @@
             font-size: 25px
             line-height: 33px
     .activities 
+        padding-bottom: 41px
         &__card
             width: 100%
             padding-right: 18%
@@ -239,12 +296,47 @@
             &-price
                 margin-top: 0
 
+    .footer
+        padding-top: 67px
+        &__wrapper
+            // column-gap: 38px
+            grid-template-areas: "logo" "." "social" "legal" "additional" "categories" "contact" "." "." "message" "bottom"
+        &__social
+            margin-top: 0
+            flex-direction: column
+            &-wrapper
+                min-height: 29px
+                margin-left: 0
+        &__legal
+            margin-top: 4px
+        &__categories
+            margin-top: 9px
+        &__contact
+            min-width: 100%
+            &-description
+                margin-bottom: 19px
+            &-adress
+                margin-bottom: 22px
+            &-phone
+                width: 90%
+            &-frame
+                width: 17px
+        &__message
+            min-width: 100%
+            &-form
+                width: 96%
+                margin-top: -4px
+            &-input
+                width: 100%
+        &__bottom
+            &-wrapper
+                flex-direction: column
+            &-internal
+                margin-bottom: 12px
+            &-external
+                position: relative
 
-                 
-                
 
-
-        
 @media (max-width: 480px)
     .container, .newsletter__wrapper 
         max-width: 480px
@@ -328,6 +420,30 @@
         width: 100%
         &__input
             padding-left: 20px
+
+    .footer
+        &__message
+            &-form
+                flex-direction: column
+                align-items: flex-start
+            &-textarea
+                width: 100%
+                height: 122px
+                flex-basis: auto
+                margin-bottom: 16px
+            &-note
+                width: 100%
+                margin-bottom: 14px
+            &-button
+                order: 1
+        &__bottom
+            margin-top: 11px
+            &-internal
+                min-width: 94%
+
+            
+
+
 
 
     

@@ -1,0 +1,157 @@
+.footer 
+    background-color: $dark
+    color: $footer-text
+    padding-top: 108px
+    padding-bottom: 46px
+    &__wrapper
+        display: grid
+        grid-template-areas: "logo categories additional legal" "logo categories social social" ". . . ." ". . . ." ". . . ." "contact contact message message" ". . . ." ". . . ." ". . . ." ". . . ." "bottom bottom bottom bottom"
+        // grid-gap: 1em
+        column-gap: 77px
+        row-gap: 19px
+    &__title
+        font-weight: bold
+        font-size: 18px
+        line-height: 23px
+        text-transform: uppercase
+        margin-bottom: 19px
+        color: $light
+    &__list
+        &-item
+            font-size: 14px
+            line-height: 22px
+    &__logo
+        grid-area: logo
+        align-self: center
+        width: min-content
+        width: 153px
+        &-img
+            width: 100%
+            height: 100%
+    &__categories
+        grid-area: categories
+        // padding-left: 33px
+        min-width: 156px
+    &__additional
+        grid-area: additional
+        // padding-left: 34px
+        min-width: 251px
+    &__legal
+        grid-area: legal
+        justify-self: end
+        min-width: 195px
+    &__social
+        grid-area: social
+        display: flex
+        align-items: flex-start
+        min-width: 293px
+        &-wrapper
+            margin-left: 45px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            min-width: 85px
+        &-link
+
+    &__contact
+        grid-area: contact
+        font-size: 14px
+        line-height: 22px
+        min-width: 493px
+        margin-top: 13px
+        &-description
+            margin: 0
+            margin-bottom: 22px
+            margin-top: 25px
+        &-adress
+            display: flex
+            margin-bottom: 21px
+        &-phone
+            display: flex
+            align-items: flex-start
+            margin-bottom: 22px
+        &-mail
+            display: flex
+        &-frame
+           width: 25px
+           height: 24px 
+           margin-right: 16px
+           display: flex
+           justify-content: center
+           flex-shrink: 0
+    &__message
+        grid-area: message
+        justify-self: end
+        min-width: 539px
+        &-form
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            font-size: 12px
+            line-height: 15px
+            margin-top: 35px
+            align-items: center
+        &-input
+            height: 50px
+            width: 255px
+            padding: 0 23px
+            border-radius: 4px
+            border: none
+            margin-bottom: 15px
+            &::placeholder
+                color: $footer-text
+        &-textarea
+            height: 123px
+            padding: 18px 23px
+            border-radius: 4px
+            resize: none
+            flex-basis: 100%
+            margin-bottom: 23px
+            &::placeholder
+                color: $footer-text
+        &-button
+            background-color: $primary-color
+            color: $light
+            width: 160px
+            height: 50px
+            border-radius: 4px
+    &__bottom
+        margin-top: 7px
+        grid-area: bottom
+        min-width: 696px
+        font-size: 12px
+        line-height: 15px
+        &-wrapper
+            position: relative
+            display: flex
+            align-items: flex-start
+            justify-content: center
+        &-internal
+            display: flex
+            justify-content: space-between
+            min-width: 283px
+            &-link
+                // margin-right: 7px
+        &-external
+            display: flex
+            align-items: center
+            justify-content: space-around
+            min-width: 136px
+            position: absolute
+            right: 0
+            bottom: 1px
+            height: 22px
+            background-color: #202539
+            &-link
+                position: relative
+                border-radius: 4px
+                width: 20px
+                height: 15px
+        &-icon
+            width: 100%
+            height: 100%
+
+            
+
+
+
