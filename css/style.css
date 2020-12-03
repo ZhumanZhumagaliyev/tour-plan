@@ -2044,6 +2044,7 @@ textarea::placeholder {
     right: 0;
     left: 0;
     bottom: 0;
+    height: 100%;
   }
   .navbar-bottom--visible {
     display: block;
@@ -2384,7 +2385,7 @@ textarea::placeholder {
     padding-top: 24px;
   }
   .navbar-bottom {
-    top: 71px;
+    top: 70px;
   }
   .breadcrumb {
     min-height: 50px;
