@@ -563,6 +563,14 @@ textarea::placeholder {
   line-height: 18px;
 }
 
+.navbar-menu__user {
+  display: none;
+}
+
+.navbar-menu__search {
+  display: none;
+}
+
 .breadcrumb-list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2015,11 +2023,79 @@ textarea::placeholder {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar__user, .navbar-bottom {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+  }
+  .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--hidden {
+    display: none;
+  }
+  .navbar-bottom {
+    padding-top: 31px;
+    display: none;
+    position: fixed;
+    top: 78px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .navbar-bottom--visible {
+    display: block;
   }
   .navbar__logo {
     width: 132px;
+  }
+  .navbar-menu__user {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__user-avatar {
+    margin-bottom: 11px;
+  }
+  .navbar-menu__user-name {
+    margin-left: 0;
+    margin-bottom: 26px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 87%;
+    margin: 0 auto;
+    margin-bottom: 39px;
+  }
+  .navbar-menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .search__input {
+    max-width: 100%;
+    width: 100%;
   }
   .menu-button {
     width: 16px;
@@ -2044,6 +2120,9 @@ textarea::placeholder {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .breadcrumb {
+    padding-top: 78px;
   }
   .hotel-slider {
     height: 380px;
@@ -2303,6 +2382,9 @@ textarea::placeholder {
   .navbar-top {
     min-height: 70px;
     padding-top: 24px;
+  }
+  .navbar-bottom {
+    top: 71px;
   }
   .breadcrumb {
     min-height: 50px;
