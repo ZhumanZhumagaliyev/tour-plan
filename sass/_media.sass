@@ -272,6 +272,9 @@
     .thanks
         margin-top: 78px
 
+    .modal
+        &__dialog
+            padding: 33px 5%
 
 @media (max-width: 600px)
     .container, .newsletter__wrapper
@@ -390,9 +393,28 @@
             &-external
                 position: relative
 
+@media (max-height: 600px) and (orientation:landscape)
+    .modal
+        &__dialog
+            top: 0
+            transform: translate(-50%)
+            min-height: 100vh
+        &__message-form
+            overflow-y: scroll
+            height: 200px
+
+@media (max-height: 472px) and (orientation:portrait)
+    .modal
+        &__dialog
+            top: 0
+            transform: translate(-50%)
+            min-height: auto
+        &__message-form
+            overflow-y: scroll
+            height: 90vh
 
 @media (max-width: 480px)
-    .container, .newsletter__wrapper 
+    .container, .newsletter__wrapper
         max-width: 480px
         width: 88%
     .navbar
@@ -496,6 +518,24 @@
             margin-top: 11px
             &-internal
                 min-width: 94%
+
+    .modal
+        &__dialog
+            width: 88%   
+        &__message
+            &-form
+                min-width: 100%
+                max-width: 100%
+            &-button
+                flex-basis: 100%
+                order: 1
+            &-note
+                margin-bottom: 14px
+
+        
+
+
+      
 
             
 
