@@ -385,6 +385,9 @@
                 margin-top: -4px
             &-wrapper
                 width: 100%
+                margin-top: 15px
+                &:first-child
+                    margin-top: 0
                 
         &__bottom
             &-wrapper
@@ -403,6 +406,12 @@
         &__message-form
             overflow-y: scroll
             height: 300px
+    #emailModal-error, #nameModal-error, #phoneModal-error
+        top: 0px
+        padding: 1px
+        line-height: 14px
+        &::before
+            top: 2px
 
 @media (max-height: 373px) and (orientation:landscape)
     .modal
@@ -418,7 +427,14 @@
             min-height: auto
         &__message-form
             overflow-y: scroll
-            height: 90vh
+            height: 79vh
+    #emailModal-error, #nameModal-error, #phoneModal-error
+        top: 0px
+        padding: 1px
+        line-height: 14px
+        &::before
+            top: 2px
+            
 
 @media (max-width: 480px)
     .container, .newsletter__wrapper
@@ -505,6 +521,11 @@
         width: 100%
         &__input
             padding-left: 20px
+
+    #emailSub-error
+        top: -30px
+        &::before
+            left: 10px
 
     .footer
         &__message

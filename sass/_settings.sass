@@ -25,13 +25,13 @@ button
     border: none
     color: inherit
     background-color: transparent
-    &:hover
-        cursor: pointer
+    cursor: pointer
 
-input::placeholder 
-  color: inherit
-  font-size: inherit
-  color: inherit
+input
+    &::placeholder 
+        color: inherit
+        font-size: inherit
+        color: inherit
 
 textarea::placeholder 
   color: inherit
@@ -59,7 +59,40 @@ textarea::placeholder
     max-width: 1110px
     margin: auto
 
-.invalid
-    color: $primary-color
-    border-bottom: 1px solid $primary-color
+label.invalid
+    color: $light
+    position: absolute
+    left: 20px
+    top: -11px
+    background-color: $primary-color
+    padding: 3px
+    border-radius: 5px
+    z-index: 1
+    text-decoration: none
+    &::before
+        content: ""
+        border: 20px solid
+        position: absolute
+        bottom: -30px
+        left: 10px
+        border-color: $primary-color transparent transparent
+        border-left: 0
+        transform: rotate(10deg)
+        z-index: -1
+        
+#emailSub-error
+    // top: -30px
+    font-size: 12px
+    line-height: 15px
+    &::before
+        content: ""
+        left: 20px
+    
+
+        
+
+
+
+
+
 

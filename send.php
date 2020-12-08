@@ -5,10 +5,16 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
-$name = $_POST['name'];
-$phone = $_POST['phone'];
+$nameModal = $_POST['nameModal'];
+$nameFooter = $_POST['nameFooter'];
+
+$phoneModal = $_POST['phoneModal'];
+$phoneFooter = $_POST['phoneFooter'];
+
 $message = $_POST['message'];
-$email = $_POST['email'];
+
+$emailModal = $_POST['emailModal'];
+$emailSub = $_POST['emailSub'];
 
 $subscribeBtn = $_POST['subscribeBtn'];
 $footerBtn = $_POST['footerBtn'];
@@ -18,22 +24,22 @@ $modalBtn = $_POST['modalBtn'];
 if (isset($modalBtn)) {
 $title = "New Booking";
 $body = "
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br>
-<b>E-mail:</b> $email<br>
+<b>Name:</b> $nameModal<br>
+<b>Phone:</b> $phoneModal<br>
+<b>E-mail:</b> $emailModal<br>
 <b>Message:</b><br>$message
 ";
 } elseif (isset($footerBtn)) {
 $title = "New Appeal";
 $body = "
-<b>Name:</b> $name<br>
-<b>Phone:</b> $phone<br>
+<b>Name:</b> $nameFooter<br>
+<b>Phone:</b> $phoneFooter<br>
 <b>Message:</b><br>$message
 ";
 }else {
 $title = "New Subscriber";
 $body = "
-<b>E-mail:</b> $email<br>
+<b>E-mail:</b> $emailSub<br>
 ";
 };
 

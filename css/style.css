@@ -374,9 +374,6 @@ button {
   border: none;
   color: inherit;
   background-color: transparent;
-}
-
-button:hover {
   cursor: pointer;
 }
 
@@ -480,9 +477,41 @@ textarea::placeholder {
   margin: auto;
 }
 
-.invalid {
-  color: #EC1F46;
-  border-bottom: 1px solid #EC1F46;
+label.invalid {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: -11px;
+  background-color: #EC1F46;
+  padding: 3px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  z-index: 1;
+  text-decoration: none;
+}
+
+label.invalid::before {
+  content: "";
+  border: 20px solid;
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  border-color: #EC1F46 transparent transparent;
+  border-left: 0;
+  -webkit-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+          transform: rotate(10deg);
+  z-index: -1;
+}
+
+#emailSub-error {
+  font-size: 12px;
+  line-height: 15px;
+}
+
+#emailSub-error::before {
+  content: "";
+  left: 20px;
 }
 
 .navbar {
@@ -1717,6 +1746,7 @@ textarea::placeholder {
 
 .footer__message-wrapper {
   width: 255px;
+  position: relative;
 }
 
 .footer__message-input {
@@ -1915,9 +1945,19 @@ textarea::placeholder {
   line-height: 15px;
 }
 
-.modal__message-input {
+.modal__message-wrapper {
+  position: relative;
   height: 50px;
   margin-top: 15px;
+  width: 100%;
+}
+
+.modal__message-wrapper:first-of-type {
+  margin-top: 0;
+}
+
+.modal__message-input {
+  height: 100%;
   width: 100%;
 }
 
@@ -1941,12 +1981,9 @@ textarea::placeholder {
   color: #BDBDBD;
 }
 
-.modal__message-input:first-of-type {
-  margin-top: 0;
-}
-
 .modal__message-textarea {
   margin-top: 15px;
+  margin-bottom: 15px;
   height: 123px;
 }
 
@@ -1971,7 +2008,6 @@ textarea::placeholder {
 }
 
 .modal__message-button {
-  margin-top: 15px;
   width: 160px;
   height: 50px;
   background-color: #EC1F46;
@@ -2524,6 +2560,10 @@ textarea::placeholder {
   }
   .footer__message-wrapper {
     width: 100%;
+    margin-top: 15px;
+  }
+  .footer__message-wrapper:first-child {
+    margin-top: 0;
   }
   .footer__bottom-wrapper {
     -webkit-box-orient: vertical;
@@ -2552,6 +2592,14 @@ textarea::placeholder {
     overflow-y: scroll;
     height: 300px;
   }
+  #emailModal-error, #nameModal-error, #phoneModal-error {
+    top: 0px;
+    padding: 1px;
+    line-height: 14px;
+  }
+  #emailModal-error::before, #nameModal-error::before, #phoneModal-error::before {
+    top: 2px;
+  }
 }
 
 @media (max-height: 373px) and (orientation: landscape) {
@@ -2570,7 +2618,15 @@ textarea::placeholder {
   }
   .modal__message-form {
     overflow-y: scroll;
-    height: 90vh;
+    height: 79vh;
+  }
+  #emailModal-error, #nameModal-error, #phoneModal-error {
+    top: 0px;
+    padding: 1px;
+    line-height: 14px;
+  }
+  #emailModal-error::before, #nameModal-error::before, #phoneModal-error::before {
+    top: 2px;
   }
 }
 
@@ -2679,6 +2735,12 @@ textarea::placeholder {
   }
   .subscribe__input {
     padding-left: 20px;
+  }
+  #emailSub-error {
+    top: -30px;
+  }
+  #emailSub-error::before {
+    left: 10px;
   }
   .footer__message-form {
     -webkit-box-orient: vertical;

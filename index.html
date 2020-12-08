@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -132,11 +133,41 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="stars hotel-info__stars">
-              <img class="stars__icon" src="img/star.svg" alt="Icon: star" />
-              <img class="stars__icon" src="img/star.svg" alt="Icon: star" />
-              <img class="stars__icon" src="img/star.svg" alt="Icon: star" />
-              <img class="stars__icon" src="img/star.svg" alt="Icon: star" />
-              <img class="stars__icon" src="img/star.svg" alt="Icon: star" />
+              <img
+                class="stars__icon"
+                src="img/star.svg"
+                alt="Icon: star"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              />
+              <img
+                class="stars__icon"
+                src="img/star.svg"
+                alt="Icon: star"
+                data-aos="fade-right"
+                data-aos-delay="400"
+              />
+              <img
+                class="stars__icon"
+                src="img/star.svg"
+                alt="Icon: star"
+                data-aos="fade-right"
+                data-aos-delay="500"
+              />
+              <img
+                class="stars__icon"
+                src="img/star.svg"
+                alt="Icon: star"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              />
+              <img
+                class="stars__icon"
+                src="img/star.svg"
+                alt="Icon: star"
+                data-aos="fade-right"
+                data-aos-delay="700"
+              />
             </div>
             <div class="hotel-info__wrapper">
               <h1 class="hotel-name">grand hilton hotel</h1>
@@ -171,14 +202,14 @@
               </div>
               <div class="swiper-slide hotel-slider__slide">
                 <img
-                  src="img/hotel-slider-1.jpg"
+                  src="img/hotel-slider-2.jpg"
                   class="hotel-slider__slide-img"
                   alt="Картинка: Фото отеля"
                 />
               </div>
               <div class="swiper-slide hotel-slider__slide">
                 <img
-                  src="img/hotel-slider-1.jpg"
+                  src="img/hotel-slider-3.jpg"
                   class="hotel-slider__slide-img"
                   alt="Картинка: Фото отеля"
                 />
@@ -268,7 +299,13 @@
     <!-- hotel -->
     <section class="packages">
       <div class="container">
-        <h2 class="packages__main-title">Other Packages</h2>
+        <h2
+          class="packages__main-title"
+          data-aos="fade-up"
+          data-aos-duration="300"
+        >
+          Other Packages
+        </h2>
         <div class="packages__wrapper">
           <div class="packages__big packages__card">
             <div class="packages__big-frame">
@@ -311,7 +348,10 @@
                     alt="Icon: star"
                   />
                 </div>
-                <h3 class="packages-title packages__big-title">
+                <h3
+                  class="packages-title packages__big-title"
+                  data-aos="zoom-in"
+                >
                   Hotel Blue Haven
                 </h3>
                 <p class="packages-paragraph packages__big-paragraph">
@@ -371,7 +411,11 @@
             </div>
             <div class="packages__little-description">
               <div class="packages__little-info" data-simplebar>
-                <h3 class="packages-title packages__little-title">
+                <h3
+                  class="packages-title packages__little-title"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   LUX* Belle Mare
                 </h3>
                 <div class="packages-details packages__little-details">
@@ -423,7 +467,11 @@
             </div>
             <div class="packages__little-description">
               <div class="packages__little-info" data-simplebar>
-                <h3 class="packages-title packages__little-title">
+                <h3
+                  class="packages-title packages__little-title"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   White Palace
                 </h3>
                 <div class="packages-details packages__little-details">
@@ -476,7 +524,11 @@
             </div>
             <div class="packages__little-description">
               <div class="packages__little-info" data-simplebar>
-                <h3 class="packages-title packages__little-title">
+                <h3
+                  class="packages-title packages__little-title"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   Luxury Place
                 </h3>
                 <div class="packages-details packages__little-details">
@@ -528,7 +580,11 @@
             </div>
             <div class="packages__little-description">
               <div class="packages__little-info" data-simplebar>
-                <h3 class="packages-title packages__little-title">
+                <h3
+                  class="packages-title packages__little-title"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
                   Hotel Five Star
                 </h3>
                 <div class="packages-details packages__little-details">
@@ -587,11 +643,10 @@
           class="subscribe newsletter__subscribe form"
         >
           <input
-            name="email"
+            name="emailSub"
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            required
           />
           <button type="submit" class="subscribe__button" name="subscribeBtn">
             Send
@@ -603,7 +658,9 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about&nbsp;us</h2>
+        <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="300">
+          What people think about&nbsp;us
+        </h2>
 
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper reviews-slider__wrapper">
@@ -748,7 +805,13 @@
 
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2
+          class="activities__title"
+          data-aos="flip-left"
+          data-aos-duration="500"
+        >
+          Other Activities
+        </h2>
         <div class="activities__wrapper">
           <div class="activities__card">
             <img
@@ -992,18 +1055,16 @@
             >
               <div class="footer__message-wrapper">
                 <input
-                  required
                   type="text"
-                  name="name"
+                  name="nameFooter"
                   class="input footer__message-input"
                   placeholder="Your Full Name*"
                 />
               </div>
               <div class="footer__message-wrapper">
                 <input
-                  required
                   type="tel"
-                  name="phone"
+                  name="phoneFooter"
                   class="input footer__message-input phone"
                   placeholder="Phone Number*"
                 />
@@ -1087,27 +1148,31 @@
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__message-form form">
-          <input
-            type="text"
-            required
-            name="name"
-            class="input modal__message-input"
-            placeholder="Your Full Name*"
-          />
-          <input
-            type="tel"
-            required
-            name="phone"
-            class="input modal__message-input phone"
-            placeholder="Phone Number*"
-          />
-          <input
-            type="email"
-            required
-            name="email"
-            class="input modal__message-input"
-            placeholder="Email*"
-          />
+          <div class="modal__message-wrapper">
+            <input
+              type="text"
+              name="nameModal"
+              class="input modal__message-input"
+              placeholder="Your Full Name*"
+            />
+          </div>
+          <div class="modal__message-wrapper">
+            <input
+              type="tel"
+              name="phoneModal"
+              class="input modal__message-input phone"
+              placeholder="Phone Number*"
+            />
+          </div>
+          <div class="modal__message-wrapper">
+            <input
+              type="email"
+              name="emailModal"
+              class="input modal__message-input"
+              placeholder="Email*"
+            />
+          </div>
+
           <textarea
             name="message"
             class="textarea modal__message-textarea"
@@ -1127,6 +1192,7 @@
     <script src="js/parallax.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -46,21 +46,25 @@
             min-width: 302px
             font-size: 12px
             line-height: 15px
-        &-input
+        &-wrapper
+            position: relative
             height: 50px
             margin-top: 15px
             width: 100%
-            &::placeholder
-                color: $grey
             &:first-of-type
                 margin-top: 0
+        &-input
+            height: 100%
+            width: 100%
+            &::placeholder
+                color: $grey
         &-textarea
             margin-top: 15px
+            margin-bottom: 15px
             height: 123px
             &::placeholder
                 color: $grey
         &-button
-            margin-top: 15px
             width: 160px
             height: 50px
             background-color: $primary-color
