@@ -383,8 +383,9 @@
             &-form
                 width: 96%
                 margin-top: -4px
-            &-input
+            &-wrapper
                 width: 100%
+                
         &__bottom
             &-wrapper
                 flex-direction: column
@@ -393,7 +394,7 @@
             &-external
                 position: relative
 
-@media (max-height: 600px) and (orientation:landscape)
+@media (max-height: 430px) and (orientation:landscape)
     .modal
         &__dialog
             top: 0
@@ -401,6 +402,12 @@
             min-height: 100vh
         &__message-form
             overflow-y: scroll
+            height: 300px
+
+@media (max-height: 373px) and (orientation:landscape)
+    .modal
+        &__dialog
+        &__message-form
             height: 200px
 
 @media (max-height: 472px) and (orientation:portrait)

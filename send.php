@@ -10,21 +10,32 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
 
-// Формирование самого письма
+$subscribeBtn = $_POST['subscribeBtn'];
+$footerBtn = $_POST['footerBtn'];
+$modalBtn = $_POST['modalBtn'];
 
-if (isset($email)) {
-$title = "New Subscriber";
-$body = "
-<b>e-mail:</b> $email<br>
-";
-} else {
-$title = "New appeal";
+
+if (isset($modalBtn)) {
+$title = "New Booking";
 $body = "
 <b>Name:</b> $name<br>
-<b>phone:</b> $phone<br><br>
+<b>Phone:</b> $phone<br>
+<b>E-mail:</b> $email<br>
 <b>Message:</b><br>$message
 ";
-}
+} elseif (isset($footerBtn)) {
+$title = "New Appeal";
+$body = "
+<b>Name:</b> $name<br>
+<b>Phone:</b> $phone<br>
+<b>Message:</b><br>$message
+";
+}else {
+$title = "New Subscriber";
+$body = "
+<b>E-mail:</b> $email<br>
+";
+};
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

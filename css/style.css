@@ -452,8 +452,6 @@ textarea::placeholder {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 12px;
-  line-height: 15px;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -480,6 +478,11 @@ textarea::placeholder {
 .container {
   max-width: 1110px;
   margin: auto;
+}
+
+.invalid {
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
 }
 
 .navbar {
@@ -1258,9 +1261,6 @@ textarea::placeholder {
   position: relative;
   width: 350px;
   height: 55px;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -1272,6 +1272,8 @@ textarea::placeholder {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1303,6 +1305,8 @@ textarea::placeholder {
   color: #fff;
   font-size: 12px;
   line-height: 15px;
+  -webkit-border-radius: 0 4px 4px 0;
+          border-radius: 0 4px 4px 0;
 }
 
 .reviews {
@@ -1707,12 +1711,18 @@ textarea::placeholder {
 
 .footer__message-form {
   margin-top: 35px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__message-wrapper {
+  width: 255px;
 }
 
 .footer__message-input {
+  width: 100%;
   height: 50px;
-  width: 255px;
-  margin-bottom: 15px;
+  border: none;
 }
 
 .footer__message-input::-webkit-input-placeholder {
@@ -1737,6 +1747,7 @@ textarea::placeholder {
 
 .footer__message-textarea {
   height: 123px;
+  margin-top: 15px;
   margin-bottom: 23px;
 }
 
@@ -1900,11 +1911,13 @@ textarea::placeholder {
 .modal__message-form {
   max-width: 302px;
   min-width: 302px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message-input {
   height: 50px;
-  margin-bottom: 15px;
+  margin-top: 15px;
   width: 100%;
 }
 
@@ -1928,8 +1941,12 @@ textarea::placeholder {
   color: #BDBDBD;
 }
 
+.modal__message-input:first-of-type {
+  margin-top: 0;
+}
+
 .modal__message-textarea {
-  margin-bottom: 15px;
+  margin-top: 15px;
   height: 123px;
 }
 
@@ -1954,6 +1971,7 @@ textarea::placeholder {
 }
 
 .modal__message-button {
+  margin-top: 15px;
   width: 160px;
   height: 50px;
   background-color: #EC1F46;
@@ -2504,7 +2522,7 @@ textarea::placeholder {
     width: 96%;
     margin-top: -4px;
   }
-  .footer__message-input {
+  .footer__message-wrapper {
     width: 100%;
   }
   .footer__bottom-wrapper {
@@ -2522,7 +2540,7 @@ textarea::placeholder {
   }
 }
 
-@media (max-height: 600px) and (orientation: landscape) {
+@media (max-height: 430px) and (orientation: landscape) {
   .modal__dialog {
     top: 0;
     -webkit-transform: translate(-50%);
@@ -2532,6 +2550,12 @@ textarea::placeholder {
   }
   .modal__message-form {
     overflow-y: scroll;
+    height: 300px;
+  }
+}
+
+@media (max-height: 373px) and (orientation: landscape) {
+  .modal__message-form {
     height: 200px;
   }
 }
