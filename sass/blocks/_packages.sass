@@ -66,12 +66,9 @@
         width: 120px
         height: 40px
         border-radius: 4px
-        background-color: $primary-color
-        color: $light
         font-weight: 600
         font-size: 14px
-        line-height: 19px
-
+        line-height: 19px  
     &__big
         grid-column: span 2
         &-frame
@@ -88,7 +85,9 @@
             width: 100%
             padding: 46px 21px 30px 43px
         &-info
-            height: 340px
+            height: 343px
+            & .simplebar-scrollbar::before 
+                background-color: lighten($dark, 15%)
         &-stars
             margin-bottom: 5px
         &-title
@@ -114,6 +113,8 @@
             padding: 30px 21px 14px 32px
         &-info
             height: 124px
+            & .simplebar-scrollbar::before 
+                background-color: lighten($dark, 15%)
         &-stars
             margin-bottom: 5px
         &-title
@@ -122,8 +123,7 @@
         &-price
             margin-top: 13px
 
-.simplebar-scrollbar::before 
-    background-color: lighten($dark, 15%)
+
 
 
 

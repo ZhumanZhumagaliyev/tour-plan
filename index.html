@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -21,6 +23,7 @@
         <div class="navbar-top">
           <a href="index.html" class="logo navbar__logo">
             <img
+              loading="lazy"
               src="img/horizontal-logo.svg"
               alt="Logo: Best Tour Plan"
               class="logo__img"
@@ -36,14 +39,15 @@
               class="search__input"
               placeholder="Search Location"
             />
-            <button class="search__button">
-              <img src="img/search.svg" alt="Icon: search" />
+            <button class="search__button button">
+              <img src="img/search.svg" alt="Icon: Search" loading="lazy" />
             </button>
           </form>
 
           <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
-              src="img/user-avatar.jfif"
+              loading="lazy"
+              src="img/user-avatar.webp"
               alt="Avatar: Nathan"
               class="user__avatar"
             />
@@ -65,7 +69,8 @@
           <nav class="navbar-menu">
             <a href="#" class="user navbar-menu__user">
               <img
-                src="img/user-avatar.jfif"
+                loading="lazy"
+                src="img/user-avatar.webp"
                 alt="Avatar: Nathan"
                 class="user__avatar navbar-menu__user-avatar"
               />
@@ -78,8 +83,8 @@
                 class="search__input"
                 placeholder="Search Location"
               />
-              <button class="search__button">
-                <img src="img/search.svg" alt="Icon: search" />
+              <button class="search__button button">
+                <img src="img/search.svg" alt="Icon: search" loading="lazy" />
               </button>
             </form>
 
@@ -117,10 +122,10 @@
       <div class="container">
         <ul class="breadcrumb-list">
           <li class="breadcrumb-list__item">
-            <a href="" class="breadcrumb-list__link"> Home </a>
+            <a href="index.html" class="breadcrumb-list__link"> Home </a>
           </li>
           <li class="breadcrumb-list__item">
-            <a href="" class="breadcrumb-list__link"> Flash Offers </a>
+            <a href="#" class="breadcrumb-list__link"> Flash Offers </a>
           </li>
           <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
         </ul>
@@ -134,6 +139,7 @@
           <div class="hotel-info__text">
             <div class="stars hotel-info__stars">
               <img
+                loading="lazy"
                 class="stars__icon"
                 src="img/star.svg"
                 alt="Icon: star"
@@ -141,6 +147,7 @@
                 data-aos-delay="300"
               />
               <img
+                loading="lazy"
                 class="stars__icon"
                 src="img/star.svg"
                 alt="Icon: star"
@@ -148,6 +155,7 @@
                 data-aos-delay="400"
               />
               <img
+                loading="lazy"
                 class="stars__icon"
                 src="img/star.svg"
                 alt="Icon: star"
@@ -155,6 +163,7 @@
                 data-aos-delay="500"
               />
               <img
+                loading="lazy"
                 class="stars__icon"
                 src="img/star.svg"
                 alt="Icon: star"
@@ -162,6 +171,7 @@
                 data-aos-delay="600"
               />
               <img
+                loading="lazy"
                 class="stars__icon"
                 src="img/star.svg"
                 alt="Icon: star"
@@ -182,7 +192,7 @@
 
           <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
-            <span class="rating__counter"> 4.5/<small>5</small> </span>
+            <span class="rating__counter"> 4.5/<small>5</small></span>
           </div>
         </div>
         <!-- hotel-info -->
@@ -195,23 +205,26 @@
               <!-- Slides -->
               <div class="swiper-slide hotel-slider__slide">
                 <img
-                  src="img/hotel-slider-1.jpg"
+                  loading="lazy"
                   class="hotel-slider__slide-img"
-                  alt="Картинка: Фото отеля"
+                  src="img/hotel-slider-1.webp"
+                  alt="Photo: Hotel view"
                 />
               </div>
               <div class="swiper-slide hotel-slider__slide">
                 <img
-                  src="img/hotel-slider-2.jpg"
+                  loading="lazy"
+                  src="img/hotel-slider-2.webp"
                   class="hotel-slider__slide-img"
-                  alt="Картинка: Фото отеля"
+                  alt="Photo: Hotel view"
                 />
               </div>
               <div class="swiper-slide hotel-slider__slide">
                 <img
-                  src="img/hotel-slider-3.jpg"
+                  loading="lazy"
+                  src="img/hotel-slider-3.webp"
                   class="hotel-slider__slide-img"
-                  alt="Картинка: Фото отеля"
+                  alt="Photo: Hotel view"
                 />
               </div>
             </div>
@@ -219,6 +232,7 @@
             <!-- If we need navigation buttons -->
             <div class="hotel-slider__button hotel-slider__button--prev">
               <img
+                loading="lazy"
                 src="img/hotel-slider-arrow-prev.svg"
                 class="hotel-slider__button-icon"
                 alt="Icon: previous slide"
@@ -226,6 +240,7 @@
             </div>
             <div class="hotel-slider__button hotel-slider__button--next">
               <img
+                loading="lazy"
                 src="img/hotel-slider-arrow-next.svg"
                 class="hotel-slider__button-icon"
                 alt="Icon: next slide"
@@ -242,6 +257,7 @@
                 <div class="booking__room">
                   <div class="booking__room-details">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="booking__room-icon"
@@ -250,6 +266,7 @@
                   </div>
                   <div class="booking__room-details">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="booking__room-icon"
@@ -264,6 +281,7 @@
                 <span class="booking__call-text">Quick Booking</span>
                 <a href="tel:12100" class="booking__call-link">
                   <img
+                    loading="lazy"
                     src="img/phone-call.svg"
                     alt="Icon: phone call"
                     class="booking__call-icon"
@@ -278,17 +296,7 @@
             </div>
             <!-- booking -->
 
-            <div class="map hotel-grid__map">
-              <iframe
-                class="map__iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31618.33138992656!2d98.27946830121141!3d7.8645410993889735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2skz!4v1606225404927!5m2!1sru!2skz"
-                style="border: 0"
-                allowfullscreen=""
-                aria-hidden="false"
-                tabindex="0"
-              >
-              </iframe>
-            </div>
+            <div class="map hotel-grid__map"></div>
           </div>
           <!-- hotel-grid__wrapper -->
         </div>
@@ -310,7 +318,8 @@
           <div class="packages__big packages__card">
             <div class="packages__big-frame">
               <img
-                src="img/packages-1.jfif"
+                loading="lazy"
+                src="img/packages-1.webp"
                 alt="Photo: Hotel Blue Haven"
                 class="packages__img"
               />
@@ -323,26 +332,31 @@
               <div class="packages__big-info" data-simplebar>
                 <div class="stars packages__big-stars">
                   <img
+                    loading="lazy"
                     class="stars__icon"
                     src="img/star.svg"
                     alt="Icon: star"
                   />
                   <img
+                    loading="lazy"
                     class="stars__icon"
                     src="img/star.svg"
                     alt="Icon: star"
                   />
                   <img
+                    loading="lazy"
                     class="stars__icon"
                     src="img/star.svg"
                     alt="Icon: star"
                   />
                   <img
+                    loading="lazy"
                     class="stars__icon"
                     src="img/star.svg"
                     alt="Icon: star"
                   />
                   <img
+                    loading="lazy"
                     class="stars__icon"
                     src="img/star.svg"
                     alt="Icon: star"
@@ -364,6 +378,7 @@
                 <div class="packages-details packages__big-details">
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/geo.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -374,6 +389,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -382,6 +398,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="packages__icon"
@@ -393,7 +410,9 @@
               <div class="packages__price packages__big-price">
                 <span class="packages__price-old"> $ 10,500 </span>
                 <span class="packages__price-actual"> $ 9,500 </span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -401,7 +420,8 @@
           <div class="packages__card packages__little">
             <div class="packages__little-frame">
               <img
-                src="img/packages-2.jfif"
+                loading="lazy"
+                src="img/packages-2.webp"
                 alt="Photo: LUX* Belle Mare"
                 class="packages__img"
               />
@@ -421,6 +441,7 @@
                 <div class="packages-details packages__little-details">
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/geo.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -431,6 +452,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -439,6 +461,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="packages__icon"
@@ -450,14 +473,17 @@
               <div class="packages__price packages__little-price">
                 <span class="packages__price-old"> $ 8,500 </span>
                 <span class="packages__price-actual"> $ 3,000 </span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="packages__card packages__little">
             <div class="packages__little-frame">
               <img
-                src="img/packages-3.jfif"
+                loading="lazy"
+                src="img/packages-3.webp"
                 alt="Photo: White Palace"
                 class="packages__img"
               />
@@ -477,6 +503,7 @@
                 <div class="packages-details packages__little-details">
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/geo.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -487,6 +514,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -495,6 +523,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="packages__icon"
@@ -506,7 +535,9 @@
               <div class="packages__price packages__little-price">
                 <span class="packages__price-old"> $ 10,500 </span>
                 <span class="packages__price-actual"> $ 9,500 </span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -514,7 +545,8 @@
           <div class="packages__card packages__little">
             <div class="packages__little-frame">
               <img
-                src="img/packages-4.jfif"
+                loading="lazy"
+                src="img/packages-4.webp"
                 alt="Photo: Luxury Place"
                 class="packages__img"
               />
@@ -534,6 +566,7 @@
                 <div class="packages-details packages__little-details">
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/geo.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -544,6 +577,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -552,6 +586,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="packages__icon"
@@ -563,14 +598,17 @@
               <div class="packages__price packages__little-price">
                 <span class="packages__price-old"> $ 4,500 </span>
                 <span class="packages__price-actual"> $ 2,500 </span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
           <div class="packages__card packages__little">
             <div class="packages__little-frame">
               <img
-                src="img/packages-5.jfif"
+                loading="lazy"
+                src="img/packages-5.webp"
                 alt="Photo: Hotel Five Star"
                 class="packages__img"
               />
@@ -590,6 +628,7 @@
                 <div class="packages-details packages__little-details">
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/geo.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -600,6 +639,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/user.svg"
                       alt="Icon: user"
                       class="packages__icon"
@@ -608,6 +648,7 @@
                   </div>
                   <div class="packages__detail">
                     <img
+                      loading="lazy"
                       src="img/home.svg"
                       alt="Icon: home"
                       class="packages__icon"
@@ -619,7 +660,9 @@
               <div class="packages__price packages__little-price">
                 <span class="packages__price-old"> $ 6,500 </span>
                 <span class="packages__price-actual"> $ 3,500 </span>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button button" data-toggle="modal">
+                  Book Now
+                </button>
               </div>
             </div>
           </div>
@@ -648,7 +691,11 @@
             class="subscribe__input"
             placeholder="Your email address"
           />
-          <button type="submit" class="subscribe__button" name="subscribeBtn">
+          <button
+            type="submit"
+            class="subscribe__button button"
+            name="subscribeBtn"
+          >
             Send
           </button>
         </form>
@@ -670,7 +717,8 @@
               <div class="reviews-slider__slide-inner">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-slider-1.jpg"
+                    loading="lazy"
+                    src="img/reviews-slider-1.webp"
                     alt="Photo: Megan Fox"
                     class="reviews-slider__profile-avatar"
                   />
@@ -680,26 +728,31 @@
                   </div>
                   <div class="stars reviews-slider__profile-stars">
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
@@ -707,7 +760,7 @@
                   </div>
                 </div>
                 <!-- reviews-slider__profile -->
-                <div class="reviews-slider__text">
+                <div class="reviews-slider__text" data-simplebar>
                   It was very nice hotel with cleanliness. Staff behavior was
                   good and polite. They welcome us very well. Issue was only
                   that Lift was not in working and we were allotted to 3rd floor
@@ -730,7 +783,8 @@
               <div class="reviews-slider__slide-inner">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/reviews-slider-2.jpg"
+                    loading="lazy"
+                    src="img/reviews-slider-2.webp"
                     alt="Photo: Bruce Banner"
                     class="reviews-slider__profile-avatar"
                   />
@@ -740,26 +794,31 @@
                   </div>
                   <div class="stars reviews-slider__profile-stars">
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
                     />
                     <img
+                      loading="lazy"
                       class="stars__icon"
                       src="img/star.svg"
                       alt="Icon: star"
@@ -786,6 +845,7 @@
 
           <div class="reviews-slider__button reviews-slider__button--prev">
             <img
+              loading="lazy"
               src="img/reviews-slider-arrow-prev.svg"
               class="reviews-slider__button-icon"
               alt="Icon: previous slide"
@@ -793,6 +853,7 @@
           </div>
           <div class="reviews-slider__button reviews-slider__button--next">
             <img
+              loading="lazy"
               src="img/reviews-slider-arrow-next.svg"
               class="reviews-slider__button-icon"
               alt="Icon: next slide"
@@ -815,48 +876,60 @@
         <div class="activities__wrapper">
           <div class="activities__card">
             <img
-              src="img/activities-1.jfif"
+              loading="lazy"
+              src="img/activities-1.webp"
               alt="Image: Corner of chamarel"
               class="activities__card-img"
             />
             <h3 class="activities__card-title">
               The curious corner of&nbsp;chamarel
             </h3>
-            <button class="activities__card-button">Book Now</button>
+            <button class="activities__card-button button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <!-- activities__card -->
           <div class="activities__card">
             <img
-              src="img/activities-2.jfif"
+              loading="lazy"
+              src="img/activities-2.webp"
               alt="Image: Club golf"
               class="activities__card-img"
             />
             <h3 class="activities__card-title">Gymkhana club golf course</h3>
-            <button class="activities__card-button">Book Now</button>
+            <button class="activities__card-button button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <!-- activities__card -->
           <div class="activities__card">
             <img
-              src="img/activities-3.jfif"
+              loading="lazy"
+              src="img/activities-3.webp"
               alt="Image: Tamarind falls "
               class="activities__card-img"
             />
             <h3 class="activities__card-title">
               Tamarind falls hiking trip&nbsp;-&nbsp;full day
             </h3>
-            <button class="activities__card-button">Book Now</button>
+            <button class="activities__card-button button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <!-- activities__card -->
           <div class="activities__card">
             <img
-              src="img/activities-4.jfif"
+              loading="lazy"
+              src="img/activities-4.webp"
               alt="Image: Marine discovery"
               class="activities__card-img"
             />
             <h3 class="activities__card-title">
               The blue marine discovery quest
             </h3>
-            <button class="activities__card-button">Book Now</button>
+            <button class="activities__card-button button" data-toggle="modal">
+              Book Now
+            </button>
           </div>
           <!-- activities__card -->
         </div>
@@ -870,6 +943,7 @@
         <div class="footer__wrapper">
           <a href="index.html" class="logo footer__logo">
             <img
+              loading="lazy"
               src="img/vertical-logo.svg"
               alt="Logo: Best Tour Plan"
               class="footer__logo-img"
@@ -958,14 +1032,35 @@
           <div class="footer__social">
             <h3 class="footer__title">Social Network</h3>
             <div class="footer__social-wrapper">
-              <a href="#" class="footer__social-link">
-                <img src="img/facebook.svg" alt="Icon: facebook" />
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <svg class="icon">
+                  <use xlink:href="img/footer-social-icons.svg#facebook"></use>
+                </svg>
               </a>
-              <a href="#" class="footer__social-link">
-                <img src="img/youtube.svg" alt="Icon: youtube" />
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <svg class="icon">
+                  <use xlink:href="img/footer-social-icons.svg#youtube"></use>
+                </svg>
               </a>
-              <a href="#" class="footer__social-link">
-                <img src="img/instagram.svg" alt="Icon: instagram" />
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__social-link"
+              >
+                <svg class="icon">
+                  <use xlink:href="img/footer-social-icons.svg#instagram"></use>
+                </svg>
               </a>
             </div>
           </div>
@@ -980,6 +1075,7 @@
               <div class="footer__contact-adress">
                 <div class="footer__contact-frame">
                   <img
+                    loading="lazy"
                     src="img/geo-2.svg"
                     alt="Icon: geolocation"
                     class="footer__contact-icon"
@@ -987,7 +1083,7 @@
                 </div>
                 <ul class="footer__contact-list">
                   <li class="footer__contact-item">
-                    <a href="" class="footer__contact-link">
+                    <a href="#" class="footer__contact-link">
                       9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United
                       States
                     </a>
@@ -998,6 +1094,7 @@
               <div class="footer__contact-phone">
                 <div class="footer__contact-frame">
                   <img
+                    loading="lazy"
                     src="img/phone.svg"
                     alt="Icon: phone"
                     class="footer__contact-icon"
@@ -1026,6 +1123,7 @@
               <div class="footer__contact-mail">
                 <div class="footer__contact-frame">
                   <img
+                    loading="lazy"
                     src="img/mail.svg"
                     alt="Icon: mail"
                     class="footer__contact-icon"
@@ -1075,7 +1173,7 @@
                 placeholder="Message"
               ></textarea>
               <button
-                class="footer__message-button"
+                class="footer__message-button button"
                 type="submit"
                 name="footerBtn"
               >
@@ -1097,36 +1195,66 @@
                 >
               </div>
               <div class="footer__bottom-external">
-                <a href="#" class="footer__bottom-external-link">
+                <a
+                  href="https://www.americanexpress.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__bottom-external-link"
+                >
                   <img
+                    loading="lazy"
                     src="img/amex.png"
                     alt="Icon: American Express"
                     class="footer__bottom-icon"
                   />
                 </a>
-                <a href="#" class="footer__bottom-external-link">
+                <a
+                  href="https://www.apple.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__bottom-external-link"
+                >
                   <img
+                    loading="lazy"
                     src="img/apple.png"
                     alt="Icon: Apple Inc"
                     class="footer__bottom-icon"
                   />
                 </a>
-                <a href="#" class="footer__bottom-external-link">
+                <a
+                  href="https://www.amazon.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__bottom-external-link"
+                >
                   <img
+                    loading="lazy"
                     src="img/amazon-brands.png"
                     alt="Icon: Amazon"
                     class="footer__bottom-icon"
                   />
                 </a>
-                <a href="#" class="footer__bottom-external-link">
+                <a
+                  href="https://www.paypal.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__bottom-external-link"
+                >
                   <img
+                    loading="lazy"
                     src="img/paypal.png"
                     alt="Icon: Paypal"
                     class="footer__bottom-icon"
                   />
                 </a>
-                <a href="#" class="footer__bottom-external-link">
+                <a
+                  href="https://www.mastercard.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="footer__bottom-external-link"
+                >
                   <img
+                    loading="lazy"
                     src="img/mastercard.png"
                     alt="Icon: Mastercard"
                     class="footer__bottom-icon"
@@ -1144,7 +1272,7 @@
       <div class="modal__overlay"></div>
       <div class="modal__dialog">
         <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close" />
+          <img src="img/close.svg" alt="Icon: Close" loading="lazy" />
         </a>
         <h3 class="modal__title">Booking</h3>
         <form action="send.php" method="POST" class="modal__message-form form">

@@ -29,7 +29,7 @@ $body = "
 <b>E-mail:</b> $emailModal<br>
 <b>Message:</b><br>$message
 ";
-} elseif (isset($footerBtn)) {
+}elseif (isset($footerBtn)) {
 $title = "New Appeal";
 $body = "
 <b>Name:</b> $nameFooter<br>
@@ -54,11 +54,11 @@ try {
 
     // Настройки вашей почты
     $mail->Host       = 'ssl://smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'learnfast@inbox.ru'; // Логин на почте
+    $mail->Username   = 'z.zhumagaliyev@mail.ru'; // Логин на почте
     $mail->Password   = 'zzm98590'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('learnfast@inbox.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('z.zhumagaliyev@mail.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('zhuman.zhumagaliyev@gmail.com');  

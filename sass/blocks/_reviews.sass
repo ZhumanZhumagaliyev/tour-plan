@@ -19,6 +19,7 @@
                 height: 45px
             &-inner
                 max-width: 731px
+                width: 100%
                 min-height: 280px
                 padding: 0 95px 30px 99px
                 border-radius: 8px
@@ -53,6 +54,9 @@
             font-size: 12px
             line-height: 19px
             text-align: justify
+            max-height: 250px
+            & .simplebar-scrollbar::before 
+                background-color: darken($light, 15%)
         &__button
             position: absolute
             display: flex
@@ -62,6 +66,7 @@
             height: 30px
             width: 30px
             z-index: 100
+            cursor: pointer
             &--prev
                 left: 18px
             &--next
